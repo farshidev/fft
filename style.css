@@ -198,7 +198,7 @@ nav {
 
   .feet {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
