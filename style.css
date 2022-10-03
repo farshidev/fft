@@ -160,23 +160,20 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0;
       padding-top: 15px;
-     text-align: right;
+      text-align: right;
       color: black;
+
     }
     .footer-inner {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
+      align-items: flex-start;
       text-align: right;
+      width: 90%;
 
     }
 
-    .footer-inner a {
-     align-self: left;
-    }
 
    footer .icons {
       margin-bottom: 10px;
@@ -199,13 +196,12 @@ nav {
   .feet {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
+    text-align: right;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
   }
   .feet a {
-      flex-basis: 40%;
+      margin: 5px 0px;
   }
 
   .gmail {
@@ -220,5 +216,29 @@ nav {
   align-self: flex-end;
 }
 .call {
-  align-self: flex-start;
+  align-self: flex-end;
+}
+.cemail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 90%;
+}
+
+footer img {
+ 
+  max-width: 100%;
+width: 220px;
+align-self: flex-start;
+margin: 10px;
+}
+
+footer p {
+ 
+    margin: 10px;
+    max-width: 300px;
+    align-self: flex-start;
+    text-align: right;
+    margin: 20px;
+    color: white;
 }
