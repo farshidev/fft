@@ -1,12 +1,9 @@
-/* .icons {
-    background-color: #21AA58;
-    width: 100%;
-} */
 
 /* @font-face {
   font-family: iransans;
   src: url(fonts/manototv\ -\ kalamefont\ Regular.ttf) format("ttf");
 } */
+
 html{
   font-size: 16px;
 }
@@ -16,6 +13,13 @@ body {
     /* font-family: iransans; */
     /* direction: rtl; */
 }
+
+
+
+
+
+/* The header part */
+
 header {
     background-color: #21AA58;
     display: flex;
@@ -25,7 +29,6 @@ header {
     margin: 0;
     padding-top: 15px;
     color: white;
-    
 }
 .icons {
     margin-bottom: 10px;
@@ -39,6 +42,10 @@ header {
     padding-bottom: 5px;
     border-radius: 7px;
     text-align: center;
+}
+
+#facebook , #whatsapp , #instagram , #telegram {
+  font-size: 38px;
 }
 
 .line-1 {
@@ -58,27 +65,21 @@ nav {
     width: 220px;
   }
 
-
-  #farbod {
-   
-    display: block;
-    margin: 50px auto;
-    max-width: 80%;
-    background-color: #21AA58;
-    border-radius: 50%;
-    animation-name: example;
-  animation-duration: 3.5s;
-   
-}
-
-
-@keyframes example {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  #search {
+    font-size: 32px;
   }
+  #menubutton {
+    font-size: 30px;
+  }
+  #menubutton:hover {
+    color: #21AA58;
+  }
+  
+  
+  
+  
 
-
-
+/*mobnile nav*/
   .overlay {
     height: 100%;
     width: 0;
@@ -103,9 +104,6 @@ nav {
     /* margin-top: 30px; */
   }
 
-
-  
-
   .overlay a {
     padding-top: 18px;
     text-decoration: none;
@@ -116,12 +114,10 @@ nav {
     transition: 0.3s;
   }
 
-
     .overlay a:hover, .overlay a:focus {
       color: #21AA58;
     }
     
-
     .overlay img {
       position: absolute;
       top: 25px;
@@ -133,7 +129,7 @@ nav {
       position: absolute;
       top: 20px;
       right: 25px;
-      font-size: 60px;
+      font-size: 42px;
       color:black;
     }
 
@@ -141,19 +137,47 @@ nav {
     #closebutton:hover {
       color: #21AA58;
     }
+/*mobnile nav*/ 
+/*  The header part */
 
-    p {
+
+
+
+/*MAIN*/
+    #farbod {
+      display: block;
+      margin: 50px auto;
+      margin-bottom: 20px;
+      max-width: 80%;
+      background-color: #21AA58;
+      border-radius: 50%;
+      animation-name: example;
+      animation-duration: 3.5s;    
+    }
+
+    @keyframes example {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+
+    main p {
       margin: 10px;
       text-align: center;
       font-family: iransans;
     }
     
-
     i:hover {
       cursor: pointer;
     }
 
+/*MAIN*/
 
+
+
+
+
+/* Footer  */
     footer {
       background-color: #21AA58;
       display: flex;
@@ -163,82 +187,145 @@ nav {
       padding-top: 15px;
       text-align: right;
       color: black;
-
     }
+
     .footer-inner {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       text-align: right;
-      width: 90%;
-
+      width: 99%;
+      
     }
-
 
    footer .icons {
       margin-bottom: 10px;
-  }
+    }
   
    footer .icons i {
       width: 20px;
       padding-top: 5px;
       padding-bottom: 5px;
-      
-    
-  }
+    }
 
-  footer a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-  }
+    footer a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+    }
 
-  .feet {
+    .feet {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-right: 20px;
+    }
+    .feet a {
+        margin: 5px 0px;
+    }
+
+    .gmail {
+  
+      margin-left: 10px;
+    }
+
+    .call {
+      margin-right: 10px;
+    }
+    .email {
+      align-self: flex-end;
+      font-size: 5px;
+    }
+    #em {
+      font-size: 18px;
+    }
+    #pm {
+      font-size: 18px;
+    }
+
+   .call {
+      align-self: flex-end;
+    }
+   .cemail {
+    font-size: 10rem;
     display: flex;
     flex-direction: column;
-    text-align: right;
-    justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-end;
+    width: 90%;
+   }
+
+    footer img {
+     max-width: 100%;
+     width: 220px;
+     align-self: flex-start;
+     margin: 15px;
+    }
+
+    footer p {
+     font-size: 1rem;
+     margin: 20px;
+     max-width: 300px;
+     align-self: flex-start;
+     text-align: right;
+     color: white;
+    }
+
+
+/* Footer  */
+
+
+
+
+
+
+
+
+/* code for less than 360px and less than 300px */
+
+
+@media only screen and (max-width: 360px) {
+  #em {
+    font-size: 13px;
   }
-  .feet a {
-      margin: 5px 0px;
+  #pm {
+    font-size: 13px;
+  }
+  footer a {
+    font-size: 1.1rem;
   }
 
-  .gmail {
+  nav img {
+    width: 170px;
+  }
  
-    margin-left: 10px;
+  .overlay a {
+    font-size: 1.3rem;
+  }
+  
+    #closebutton {
+      right: 15px;
+      font-size: 38px;
+    }
+  
+  
+    #closebutton:hover {
+      color: #21AA58;
+    }
+  
+
+}
+@media only screen and (max-width: 310px) {
+  .icons i {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #search {
+    font-size: 28px;
+  }
+  #menubutton {
+    font-size: 27px;
   }
 
-  .call {
-    margin-right: 10px;
-  }
-.email {
-  align-self: flex-end;
-}
-.call {
-  align-self: flex-end;
-}
-.cemail {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 90%;
-}
-
-footer img {
- 
-  max-width: 100%;
-width: 220px;
-align-self: flex-start;
-margin: 10px;
-}
-
-footer p {
- 
-    margin: 10px;
-    max-width: 300px;
-    align-self: flex-start;
-    text-align: right;
-    margin: 20px;
-    color: white;
 }
